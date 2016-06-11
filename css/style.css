@@ -1,0 +1,265 @@
+h1,h2,h3,h4,h5,h6,p,figure
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    width: 920px;
+    margin: 0 auto;
+}
+
+body
+{
+    background-color: #d0d0d0;
+}
+
+#barra-nav
+{
+    margin-left: 10px;
+    background-image: url(../images/fondo_head.png);
+    background-repeat: no-repeat;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    font-family: Agency fb;
+    font-size: 30px;
+}
+
+#barra-nav ul
+{
+    padding: 0;
+}
+
+#barra-nav li
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+#barra-nav > ul > li
+{
+    display: inline-block;
+}
+
+#barra-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+#barra-nav ul > li > a
+{
+    padding: 10px;
+    transition: 0.4s;
+}
+
+#barra-nav ul > li >a:hover
+{
+    background-color: #0775ca;
+}
+
+
+#img-principal
+{
+    height: 385px;
+    box-shadow: 0 0 10px;
+    margin: 25px 0 45px;
+}
+
+#articulos
+{
+    min-height: 200px;
+    margin-bottom: -50px;
+}
+
+#articulos article
+{
+    display: flex;
+    background-image: url(../images/fondo.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 40px;
+    margin-bottom: 250px;
+}
+
+figure
+{
+    margin: 0 0 20px;
+}
+
+.img-art
+{
+    position: relative;
+    box-shadow: 0 0 10px #181818;
+}
+
+.cuerpo-art
+{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+
+.titulo-art
+{
+    font-variant: small-caps;
+    line-height: 0.9em;
+    font-size: 2.0em;
+    font-family: agency fb;
+}
+
+.titulo-art a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.titulo-art a:hover
+{
+    transition: 0.35s;
+    color: #024c8b;
+}
+
+.intro-art
+{
+    margin-top: 10px;
+    text-align: justify;
+    font-family: roboto;
+}
+
+.leer-mas
+{
+    margin-top: 20px;
+    padding: 3px;
+    background-color: black;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.leer-mas:hover
+{
+    background-color: #024c8b;
+    transition: 0.35s;
+}
+
+.leer-mas p
+{
+    padding: 0 20px;
+    color: white;
+    font-family: agency fb;
+}
+
+article
+{
+    display: flex;
+}
+
+
+.flexible
+{
+    display: flex;
+}
+
+.redes-sociales
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.redes-sociales a
+{
+    text-decoration: none;
+    padding: 30px;
+    color:white;
+    font-size: 40px;
+    font-family: agency fb;
+}
+
+.fb
+{
+    margin: 10px;
+    padding: 0px;
+    background-color: black;
+    display: inline-block;
+    border-radius: 200px;
+    background-color: #444444;
+    transition: 0.35s;
+}
+
+.tw
+{
+    
+    margin: 10px;
+    padding: 0px;
+    background-color: black;
+    display: inline-block;
+    border-radius: 200px;
+    background-color: #444444;
+    transition: 0.35s;
+}
+
+.fb:hover
+{
+    margin: 0;
+    padding: 40px;
+    background-color: black;
+    background-color: #0669b2;
+    transition: 0.35s;
+}
+
+.tw:hover
+{
+    margin: 0;
+    padding: 40px;
+    background-color: black;
+    background-color: #008aff;
+    transition: 0.35s;
+}
+
+#pie
+{
+    min-height: 150px;
+}
+
+#politicas
+{
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    font-family: roboto;
+    background-image: url(../images/barras-footer.png);
+    background-size:  contain;
+    background-repeat: no-repeat;
+}
+
+#politicas p
+{
+    margin-top: 4px;
+    font-size: 1.1em;
+}
+
+
+.text-center
+{
+    margin-top: 10px;
+    font-family: roboto;
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+}
+
+#img-footer
+{
+    background-image: url(../images/separador.jpg);
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 215px;
+    margin: 0 auto;
+    display: block;
+}
