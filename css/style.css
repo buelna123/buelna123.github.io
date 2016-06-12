@@ -12,7 +12,10 @@ h1,h2,h3,h4,h5,h6,p,figure
 
 body
 {
-    background-color: #d0d0d0;
+    background: url('../images/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 #barra-nav
@@ -67,7 +70,6 @@ body
 #img-principal
 {
     height: 385px;
-    box-shadow: 0 0 10px;
     margin: 25px 0 45px;
 }
 
@@ -80,11 +82,10 @@ body
 #articulos article
 {
     display: flex;
-    background-image: url(../images/fondo.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
     padding-bottom: 40px;
     margin-bottom: 250px;
+    background: rgba(18, 123, 255, 0.4); 
+    padding: 10px;
 }
 
 figure
@@ -123,7 +124,7 @@ figure
 .titulo-art a:hover
 {
     transition: 0.35s;
-    color: #024c8b;
+    color: aqua;
 }
 
 .intro-art
@@ -131,11 +132,12 @@ figure
     margin-top: 10px;
     text-align: justify;
     font-family: roboto;
+    color: white;
 }
 
 .leer-mas
 {
-    margin-top: 20px;
+    margin: 5px 0 5px 0;
     padding: 3px;
     background-color: black;
     display: inline-block;
@@ -227,6 +229,7 @@ article
 #pie
 {
     min-height: 150px;
+    color: white;
 }
 
 #politicas
@@ -270,11 +273,11 @@ article
 {
     display: none;
     padding: 15px;
-    background: #0669b2;
     font-size: 10px;
     border-radius: 10px;
     cursor: pointer;
     position: fixed;
     bottom: 15px;
     right: 15px;
+    background: rgba(18, 123, 255, 0.2); 
 }
