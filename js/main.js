@@ -22,6 +22,8 @@ $(document).ready(function()
       });
 });
 
+
+
 $(document).ready(function()
 {   
     $("#mostrar").click(function()
@@ -37,7 +39,6 @@ $(document).ready(function()
         $("a#mostrar").show();
         $("a#ocultar").hide();
     });
-});
 
 $(document).ready(function()
 {   
@@ -89,4 +90,22 @@ $(document).ready(function()
 });
 });
 });
+});
 
+
+$(document).ready(function()
+{
+    var altura = $('.barra').offset().top;
+    
+    $(window).on('scroll', function()
+    {
+        if($(window).scrollTop() > altura)
+        {
+            $('.barra').addClass('barra-fixed');
+        }
+        else
+        {
+            $('.barra').removeClass('barra-fixed');
+        }
+    });
+});
