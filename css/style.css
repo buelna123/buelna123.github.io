@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5,h6,p,figure
 
 body
 {
-    background: url('../images/bg.jpg');
+    background: url('../images/bg2.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -20,6 +20,7 @@ body
 
 #barra-nav
 {
+    margin-top: 15px;
     margin-left: 10px;
     background-image: url(../images/fondo_head.png);
     background-repeat: no-repeat;
@@ -84,14 +85,10 @@ body
     display: flex;
     padding-bottom: 40px;
     margin-bottom: 250px;
-    background: rgba(18, 123, 255, 0.4); 
+    background: rgba(0, 80, 255, 0.5); 
     padding: 10px;
 }
 
-figure
-{
-    margin: 0 0 20px;
-}
 
 .img-art
 {
@@ -241,6 +238,7 @@ article
     background-image: url(../images/barras-footer.png);
     background-size:  contain;
     background-repeat: no-repeat;
+    color: black;
 }
 
 #politicas p
@@ -257,6 +255,7 @@ article
     justify-content: space-around;
     display: flex;
     text-align: center;
+    color: black;
 }
 
 #img-footer
@@ -279,5 +278,11 @@ article
     position: fixed;
     bottom: 15px;
     right: 15px;
-    background: rgba(18, 123, 255, 0.2); 
+    background-color: rgba(47, 129, 255, 0.5);
+}
+
+.ir-arriba:hover
+{
+    background-color: rgba(0, 107, 255, 0.6);
+    transition: 0.35s;
 }
