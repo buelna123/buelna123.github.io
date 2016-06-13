@@ -140,6 +140,7 @@ body
     display: inline-block;
     border-radius: 20px;
     transition: 0.35s;
+    cursor: pointer;
 }
 
 .leer-mas:hover
@@ -285,4 +286,48 @@ article
 {
     background-color: rgba(0, 107, 255, 0.6);
     transition: 0.35s;
+}
+
+#oculto
+{
+    display: none;
+    color: white;
+}
+
+#oculto2
+{
+    display: none;
+    color: white;
+}
+
+#oculto3
+{
+    display: none;
+    color: white;
+}
+
+#oculto4
+{
+    display: none;
+    color: white;
+}
+
+#ocultar
+{
+    display: none;
+}
+
+#ocultar2
+{
+    display: none;
+}
+
+#ocultar3
+{
+    display: none;
+}
+
+#ocultar4
+{
+    display: none;
 }
