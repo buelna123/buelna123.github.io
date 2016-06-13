@@ -94,6 +94,7 @@ body
 {
     position: relative;
     box-shadow: 0 0 10px #181818;
+    cursor: pointer;
 }
 
 .cuerpo-art
@@ -109,6 +110,8 @@ body
     line-height: 0.9em;
     font-size: 2.0em;
     font-family: agency fb;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .titulo-art a
