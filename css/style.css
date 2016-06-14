@@ -2,7 +2,7 @@ h1,h2,h3,h4,h5,h6,p,figure
 {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing:border.box;
+    -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing: border-box;
 }
@@ -14,10 +14,20 @@ h1,h2,h3,h4,h5,h6,p,figure
     margin: 0 auto;
 }
 
+.menu_bar
+{
+    display: none;
+}
+
+header
+{
+    width: 67%;
+    margin: 0 auto;
+}
+
 header nav
 {
     background-color: #181818;
-    padding: 1px;
     display: flex;
     justify-content: space-around;
 }
@@ -36,7 +46,7 @@ header nav ul li
 header nav ul li a
 {
     display: block;
-    padding: 10px;
+    padding: 5px;
     color: white;
     text-decoration: none;
     border-radius: 10px;
@@ -48,7 +58,48 @@ header nav ul li a
 header nav ul li a:hover
 {
     background-color: #0775ca;
-    transition: 0.35s;
+    transition: 0.2s;
+}
+
+header nav ul li a span
+{
+    margin-right: 8px;
+}
+
+.caret
+{
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+header nav ul li:hover .children
+{
+    display: block;
+}
+
+header nav ul li .children
+{
+    display: none;
+    position: absolute;
+    background-color: #181818;
+    z-index: 1000;
+}
+
+
+header nav ul li .children a
+{
+    font-size: 1em;
+    margin: 5px;
+}
+
+header nav ul li .children li a span
+{
+    float: right;
+    position: relative;
+    top: 7px;
+    margin-right: 0;
+    margin-left: 6px;
+    font-size: 12px;
 }
 
 .barra-fixed
@@ -59,7 +110,7 @@ header nav ul li a:hover
     width: 67%;
     max-width: 910px;
     height: 50px;
-    background-color: rgba(11, 14, 13, 0.95);
+    background-color: rgba(11, 14, 13, 0.9);
 }
 
 .barra-fixed ul li a
@@ -360,61 +411,146 @@ article
 }
 
 
-.menu-fixed
-{
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-}
-
-
-
-@media screen and (max-width: 850px)
+@media screen and (max-width: 750px)
 {
     .container
     {
         width: 100%;
+        padding-top: 40px;
     }
 
     body
     {
-        background: rgba(46, 44, 44, 1);
+        background: rgba(230, 232, 235, 1);
+    }
+    
+    header
+    {
+        width: 100%;
+        margin-bottom: 40px;
     }
     
     header nav
     {
+        top: 70px;
+        width: 70%;
+        height: 100%;
+        position: fixed;
+        right: 100%;
+        z-index: 1000;
+    }
+    
+    header nav ul li
+    {
+        display: block;
+        padding: 0;
+    }
+    
+    header nav ul
+    {
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+    
+    header nav ul li a
+    {
+        display: block;
+        padding: 10px;
+        border-radius: 0px;
+        margin: 0;
+    }
+    
+    header nav ul li:hover .children
+    {
+        display: block;
+    }
+
+    header nav ul li:hover .children
+    {
         display: none;
     }
     
-    .ancla
+    header nav ul li .children
+    {
+        position: relative;
+        background-color: #004E6F;
+        z-index: 1000;
+    }
+
+
+    header nav ul li .children a
+    {
+        font-size: 12px;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    header nav ul li .children li a span
+    {
+        float: right;
+        position: relative;
+        top: 8px;
+        margin-right: 0;
+        margin-left: 6px;
+        font-size: 10px;
+    }
+    
+    .barra-fixed
     {
         display: none;
+    }
+    
+    .menu_bar
+    {
+        display: block;
+        width: 100%;
+        top: 0;
+        position: fixed;
+        background: #181818;
+        z-index: 1000;
+    }
+    
+    .menu_bar .btn-menu
+    {
+        display: block;
+        padding: 20px;
+        color: white;
+        font-size: 20px;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    
+    .menu_bar span
+    {
+        float: right;
+        font-size: 40px;
     }
     
     #articulos article
     {
+        margin-bottom: 60px;
         display: block;
-        width: 100%;
-        background: rgba(0, 91, 195, 0.5);
+        width: 95%;
+        background: rgba(0, 91, 195, 0.7);
     }
     
     #img-principal
     {
-        margin: 10px 5px 10px 20px;
+        margin: 0 0;
     }
     
     .img-art
     {
-        height: 150px;
-        max-width: 70%;
+        max-width: 40%;
+        max-height: 150px;
         margin: 0 auto;
-        height: 230px;
         display: flex;
     }
     
     .cuerpo-art
     {
-        padding-top: 20px;
+        padding-top: 15px;
         display: block;
         width: 95%;
         margin: 0 auto;
@@ -426,7 +562,6 @@ article
     {
         font-size: 0.95em;
     }
-    
     
     .redes-sociales
     {

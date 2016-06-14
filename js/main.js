@@ -1,3 +1,4 @@
+/*Flecha ir arriba*/
 $(document).ready(function()
 {
     $('.ir-arriba').click(function()
@@ -23,7 +24,7 @@ $(document).ready(function()
 });
 
 
-
+/*boton mostrar/ocultar*/
 $(document).ready(function()
 {   
     $("#mostrar").click(function()
@@ -93,6 +94,7 @@ $(document).ready(function()
 });
 
 
+/*barra fixed*/
 $(document).ready(function()
 {
     var altura = $('.barra').offset().top;
@@ -109,3 +111,35 @@ $(document).ready(function()
         }
     });
 });
+
+
+$(document).ready(main);
+
+var contador = 1;
+
+function main()
+{
+    $('.menu_bar').click(function()
+    {
+        if(contador == 1)
+        {
+            $('nav').animate({
+                left: '0'
+            });
+            contador = 0;
+        }
+        else
+        {
+            contador = 1;
+            $('nav').animate({
+                left: '-100%'
+            });
+        }
+    });
+    
+    //mostrar y ocultar submenu
+    $('.submenu').click(function()
+    {
+        $(this).children('.children').slideToggle(200);
+    });
+}

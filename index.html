@@ -8,6 +8,7 @@
         <meta name="description" content="Sitio web desarrollado para la revision del tercer parcial del 4AM-PR">
         <meta name="keywords" content=" cetis108, sinaloa, bachillerato, parial, Guasave">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="fuentes/fonts.css">
         <link rel="stylesheet" href="images/irarriba/fonts.css">
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="js/main.js"></script>
@@ -15,21 +16,30 @@
     <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="container">
             <header>
-                <div id="contenido">
+                <div class="menu_bar">
+                  <a href="#" class="btn-menu"><span class="icon-menu2"></span>Menu</a>
+                </div>
+                  
                    <nav class="barra">
                     <ul>
-                        <li><a href="#art1">Articulo1</a></li>
-                        <li><a href="#art2">Articulo2</a></li>
-                        <li><a href="#art3">Articulo3</a></li>
-                        <li><a href="#art4">Articulo4</a></li>
-                        <li><a href="#redes">Redes</a></li>
+                        <li><a href="#"><span class="icon-home3"></span>Inicio</a></li>
+                        <li class="submenu">
+                            <a href="#"><span class="icon-menu"></span>Articulos<span class="caret icon-circle-left"></span></a>
+                            <ul class="children">
+                                <li><a href="#art1">Articulo1<span class="icon-radio-checked2"></span></a></li>
+                                <li><a href="#art2">Articulo2<span class="icon-radio-checked2"></span></a></li>
+                                <li><a href="#art3">Articulo3<span class="icon-radio-checked2"></span></a></li>
+                                <li><a href="#art4">Articulo4<span class="icon-radio-checked2"></span></a></li>            
+                            </ul>
+                        </li>
+                        <li><a href="#redes"><span class="icon-bubble"></span>Redes Sociales</a></li>
+                        <li><a href="#"><span class="icon-radio-unchecked"></span>Otros</a></li>
                     </ul>
-                   </nav>
-                </div>
+                   </nav>   
             </header>
-            <main id="contenido">
+
+            <main class="container">
                <span class="ir-arriba">
                    <img src="images/irarriba/307-arrow-up.png" alt="flecha">
                </span>
