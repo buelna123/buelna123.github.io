@@ -36,11 +36,13 @@ header nav ul li
 header nav ul li a
 {
     display: block;
-    padding: 20px;
+    padding: 10px;
     color: white;
     text-decoration: none;
-    border-radius: 20px;
-    
+    border-radius: 10px;
+    font-family: agency fb;
+    font-size: 20px;
+    margin: 0 10px;
 }
 
 header nav ul li a:hover
@@ -49,26 +51,31 @@ header nav ul li a:hover
     transition: 0.35s;
 }
 
+.barra-fixed
+{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 67%;
+    max-width: 910px;
+    height: 50px;
+    background-color: rgba(11, 14, 13, 0.95);
+}
+
+.barra-fixed ul li a
+{
+    padding: 2px 10px;
+    margin: 0 auto;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
 body
 {
     background: url('../images/bg2.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
-
-.barra-fixed
-{
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    width: 100%;
-    max-width: 910px;
-}
-
-.barra-fixed ul li a
-{
-    padding: 2px 10px;
 }
 
 
@@ -99,6 +106,10 @@ main
     padding: 10px;
 }
 
+.ancla
+{
+    margin-bottom: 100px;
+}
 
 .img-art
 {
@@ -170,6 +181,7 @@ main
     color: white;
     font-family: agency fb;
 }
+
 #oculto
 {
     display: none;
@@ -357,43 +369,46 @@ article
 
 
 
-@media screen and (max-width: 900px)
+@media screen and (max-width: 850px)
 {
-    
-    header nav
+    .container
     {
         width: 100%;
     }
-    
-    header nav ul li a
+
+    body
     {
-        font-size: 15px;
-        padding: 5px;
+        background: rgba(46, 44, 44, 1);
     }
     
-    
-    .barra-fixed ul li a
+    header nav
     {
-        padding: 5px;
-        font-size: 10px;
+        display: none;
     }
     
-    .barra-fixed
+    .ancla
     {
-        width: 67%;
+        display: none;
     }
     
     #articulos article
     {
         display: block;
-        margin-bottom: 200px;
+        width: 100%;
+        background: rgba(0, 91, 195, 0.5);
+    }
+    
+    #img-principal
+    {
+        margin: 10px 5px 10px 20px;
     }
     
     .img-art
     {
         height: 150px;
-        width: 270px;
+        max-width: 70%;
         margin: 0 auto;
+        height: 230px;
         display: flex;
     }
     
@@ -401,7 +416,9 @@ article
     {
         padding-top: 20px;
         display: block;
+        width: 95%;
         margin: 0 auto;
+        justify-content: center;
         font-size: 0.9em;
     }
     
@@ -410,31 +427,10 @@ article
         font-size: 0.95em;
     }
     
+    
     .redes-sociales
     {
-        margin-bottom: 40px;
-    }
-
-    .redes-sociales a
-    {
-        padding: 20px;
-        font-size: 30px;
-    }
-    
-
-    .fb:hover
-    {
-        margin: 0px;
-        padding: 30px;
-        background-color: black;
-        background-color: #0669b2;
-        transition: 0.35s;
-    }
-
-    .tw:hover
-    {
-        margin: 0;
-        padding: 30px;
+        display: none;
     }
     
     #politicas
